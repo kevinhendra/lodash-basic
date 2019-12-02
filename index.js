@@ -67,32 +67,60 @@ const _ = require("lodash")
 
 // });
 // The _.startsWith() function determines if the string starts with the specified string. The _.endsWith() function determines if the string ends with the specified string.
-const words = ["tank", "boy", "tourist", "ten",
-        "pen", "car", "marble", "sonnet", "pleasant",
-        "ink", "atom", "Hello", "World"]
+// const words = ["tank", "boy", "tourist", "ten",
+//         "pen", "car", "marble", "sonnet", "pleasant",
+//         "ink", "atom", "Hello", "World"]
 
-console.log("Starting with 'H'");
-words.forEach(e => {
+// console.log("Starting with 'H'");
+// words.forEach(e => {
 
-        if (_.startsWith(e, 'H')) {
+//         if (_.startsWith(e, 'H')) {
 
-                console.log(e);
-        }
-});
+//                 console.log(e);
+//         }
+// });
 
-console.log("Ending with 'd'");
-words.forEach(e => {
+// console.log("Ending with 'd'");
+// words.forEach(e => {
 
-        if (_.endsWith(e, 'd')) {
+//         if (_.endsWith(e, 'd')) {
 
-                console.log(e);
-        }
-});
+//                 console.log(e);
+//         }
+// });
 
 //The _.forIn() function can be used to iterate over object properties.
-const p = { age: 24, name: "Rebecca", occupation: "teacher", hello: "world" };
+// const p = { age: 24, name: "Rebecca", occupation: "teacher", hello: "world" };
 
-_.forIn(p, (value, key) => {
+// _.forIn(p, (value, key) => {
 
-        console.log(`${key}: ${value}`);
+//         console.log(`${key}: ${value}`);
+// })
+
+// Locash library contains several functions that work with the case of words.
+// const words = ["sky", "Sun", "Blue Island", "Hello World"];
+
+// console.log(_.map(words, _.camelCase));
+// console.log(_.map(words, _.capitalize));
+// console.log(_.map(words, _.kebabCase));
+// console.log(_.map(words, _.lowerCase));
+// console.log(_.map(words, _.upperCase));
+
+
+// const first = "Hello World"
+// console.log(first);
+
+
+var data = ['Hello', 'World']
+_.times(5, () => {
+
+        console.log(data);
 })
+
+console.log(_.chunk(data, 1));
+
+console.log(_.join(data, '~'));
+
+console.log(_.join(data, ' '));
+
+console.log(_.reverse(data));
