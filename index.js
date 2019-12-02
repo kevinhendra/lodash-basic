@@ -110,17 +110,102 @@ const _ = require("lodash")
 // const first = "Hello World"
 // console.log(first);
 
+var data = ['Hello', 'World'];
 
-var data = ['Hello', 'World']
-_.times(5, () => {
+// var data = (['Hello', 'World'], ['Hello']);
 
-        console.log(data);
-})
+// _.times(5, () => {
 
-console.log(_.chunk(data, 1));
+//         console.log(data);
+// })
 
-console.log(_.join(data, '~'));
+// console.log(_.chunk(data, 1));
 
-console.log(_.join(data, ' '));
+// console.log(_.join(data, '~'));
 
-console.log(_.reverse(data));
+// console.log(_.join(data, ' '));
+
+// console.log(_.reverse(data));
+
+// console.log(_.last(data));
+
+// console.log(_.slice(data, 1, 5));
+
+// console.log(_.sortedIndex(data, 10));
+
+// console.log(_.countBy(data, 'length'));
+
+// console.log(_.sample(data));
+
+// function duplicate(n) {
+//         return [n, n];
+// }
+
+// console.log(_.flatMap(data, duplicate));
+
+// console.log(_.size(data));
+
+
+// _.defer(function (stamp) {
+//         console.log(_.now() - stamp);
+// }, _.now());
+// // => Logs the number of milliseconds it took for the deferred invocation.
+
+
+// console.log(_.isDate(new Date));
+
+// console.log(_.isRegExp(/Hello World/));
+
+// console.log(_.escapeRegExp(data));
+
+// console.log(_.initial(data));
+
+// console.log(_.words(data));
+
+// console.log(_.intersection(data));
+
+// console.log(_.last(data));
+
+// console.log(_.nth(data, 0));
+
+// console.log(_.nth(data, -1));
+
+// console.log(_.pull(data, 'Hello'));
+
+// console.log(_.reverse(data));
+
+// console.log(_.take(data, 1));
+
+// console.log(_.takeRight(data));
+
+// console.log(_.union(data));
+
+// console.log(_.uniq(data));
+
+// console.log(_.without(data, 'Hello'));
+
+// console.log(_.zip(data));
+
+// _.forEach(data, function (value) {
+//         console.log(value);
+// });
+
+// console.log(_.invokeMap(data, String.prototype.split, ''));
+
+// console.log(_.sample(data));
+
+// console.log(_.sampleSize(data, 2));
+
+// console.log(_.shuffle(data));
+
+// console.log(_.size(data));
+
+/* Flip */
+// var data = _.flip(function () {
+//         return _.toArray(arguments);
+// })
+
+// data = ['Hello']
+// console.log(data);
+
+console.log(_.padStart(data, 20, '.'));
